@@ -1,0 +1,20 @@
+n = int(input())
+arr = list(map(int, input().split()))
+
+# Store each element with its original index
+original = [(val, idx) for idx, val in enumerate(arr)]
+
+# Sort by value
+sorted_original = sorted(original, key=lambda x: x[0])
+
+unchanged = 0
+for sorted_idx, (val, orig_idx) in enumerate(sorted_original):
+    **if sorted\_idx == orig\_idx:**
+
+        **unchanged += 1**
+
+
+
+
+changed = n - unchanged
+print(f"{unchanged} {changed}")
